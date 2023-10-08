@@ -1,0 +1,117 @@
+@font-face {
+    font-family: norsebold;
+    src: url(./assets/fonts/norse-bold-webfont.woff),
+         url(./assets/fonts/norse-bold-webfont.woff2);
+    font-weight: normal;
+    font-style: normal
+}
+:root {
+    box-sizing: border-box;
+}
+
+* {
+    margin: 0;
+}
+
+.top-container {
+    display: flex;
+}
+
+header {
+    display: inline-block;
+}
+.header-container {
+    display: flex;
+    background-image: url(./assets/side-photo.jpg);
+    width: 35vw;
+    height: 100vh;
+    margin-top: 0;
+
+}
+
+.side-container {
+    margin-top: 25vh;
+}
+
+.logo-container {
+    background-color: rgb(3, 3, 3, .4);
+    height: 13vh;
+    width: 35vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1vw;
+}
+
+.logo {
+    width: 80px;
+    height: 100px;
+    /* position: absolute;
+    top: 210px;
+    left: 180px; */
+}
+
+.logo-text {
+    font-family: norsebold;
+    font-size: 5rem;
+    color: white;
+}
+
+.photo-credit {
+    font-size: .8rem;
+    color: white;
+    margin-top: 55vh;
+    margin-left: 9vw;
+}
+
+.photo-credit a {
+    color: white;
+}
+
+.top-paragraph {
+    width: 63vw;
+    height: 23vh;
+    background-color: rgb(3, 3, 3, .2);
+    margin-top: 0;
+    padding-top: 15vh;
+}
+
+.top-paragraph p {
+    margin-left: 2vw;
+    font-size: 1.5rem;
+    font-weight: 800;
+}
+
+.form-container {
+    padding: 2vh 2vw;
+    width: 63vw;
+    height: 25vh;
+    background-color: aqua;
+}
+
+.form-container p {
+    font-size: 2rem;
+    font-weight: 400;
+    padding-bottom: 2vh;
+}
+
+form {
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 3rem 3rem 3rem 3rem;
+}
+
+label {
+    font-size: .7rem;
+}
+input {
+    width: 200px;
+}
+
+footer {
+    background-color: rgb(3, 3, 3, .2);
+    width: 63vw;
+    height: 30vh;
+}
+

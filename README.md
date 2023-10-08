@@ -1,2 +1,2 @@
 # sign-up-form
-Sign-up form
+A sign-up form on a web-site.
