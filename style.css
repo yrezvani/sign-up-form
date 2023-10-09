@@ -11,6 +11,7 @@
 
 * {
     margin: 0;
+    font-family: sans-serif;
 }
 
 .top-container {
@@ -46,9 +47,6 @@ header {
 .logo {
     width: 80px;
     height: 100px;
-    /* position: absolute;
-    top: 210px;
-    left: 180px; */
 }
 
 .logo-text {
@@ -68,25 +66,29 @@ header {
     color: white;
 }
 
+.body {
+    display: flex;
+    flex-direction: column;
+    width: 65vw;
+
+}
 .top-paragraph {
-    width: 63vw;
-    height: 23vh;
+    height: 28vh;
     background-color: rgb(3, 3, 3, .2);
     margin-top: 0;
-    padding-top: 15vh;
+    padding-top: 10vh;
 }
 
 .top-paragraph p {
     margin-left: 2vw;
-    font-size: 1.5rem;
-    font-weight: 800;
+    margin-bottom: 2vh;
+    font-size: 1.2rem;
+    font-weight: 500;
 }
 
 .form-container {
     padding: 2vh 2vw;
-    width: 63vw;
     height: 25vh;
-    background-color: aqua;
 }
 
 .form-container p {
@@ -105,13 +107,52 @@ form {
 label {
     font-size: .7rem;
 }
-input {
+.form-container input {
     width: 200px;
+    border: 1px solid #E5E7EB;
+    border-radius: 2px;
+}
+
+.form-container input:focus {
+    outline: none;
+    border: 1px solid rgb(45, 102, 225);
+    border-radius: 2px;
+    box-shadow: .2em .2em .8em rgb(47, 46, 46);
+}
+
+.form-container input:invalid {
+    outline: none;
+    border: 1px solid rgb(219, 69, 69);
+}
+
+.form-container input[type="password"]:invalid {
+    outline: none;
+    border: 1px solid rgb(219, 69, 69);
+
 }
 
 footer {
     background-color: rgb(3, 3, 3, .2);
-    width: 63vw;
-    height: 30vh;
+    height: 18vh;
+    padding: 3vh 3vw;
+    flex-grow: 1;
 }
 
+
+
+footer input {
+    width: 180px;
+    height: 2.5rem;
+    font-weight: 700;
+    color: white;
+    background-color: #596D48;
+    border-radius: 7px;
+    margin-bottom: 3vh;
+}
+
+footer p {
+    display: inline-block;
+}
+footer a {
+    color: darkolivegreen;
+}
